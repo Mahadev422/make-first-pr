@@ -37,18 +37,20 @@ Once merged:
 ```
 project-root
 │
-├── contributors.json
+├── public
+|   └── contributors.json
+|   └── images/
 ├── package.json
 ├── README.md
-│
-├── scripts
-│   └── checkContributor.js
-│
 ├── src
 │   └── components
 │       └── Contributors.jsx
+│       └── Header.jsx
+│       └── Footer.jsx
 │
 └── .github
+    └── scripts
+        └── checkContributor.js
     └── workflows
         └── ci.yml
 ```
