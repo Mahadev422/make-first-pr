@@ -5,5 +5,11 @@
     "bio": "Engineering student",
     "skills": ["React", "Node", "MongoDB"],
     "avatar": "/images/mahadev.png"
-  }
+  },
+  {
+    "name": "Mahadev Kumar",
+    "github": "rajmahadev422",
+    "bio": "Open Source Developer",
+    "skills": ["React", "Node", "OpenCV", "C++", "Python"],
+    "avatar": "/images/14420.png"
 ]
