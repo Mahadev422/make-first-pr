@@ -5,12 +5,5 @@
     "bio": "Engineering student",
     "skills": ["React", "Node", "MongoDB"],
     "avatar": "/images/mahadev.png"
-  },
-  {
-    "name": "Alex",
-    "github": "alexdev",
-    "bio": "Frontend developer",
-    "skills": ["React", "Tailwind"],
-    "avatar": "/images/alex.png"
   }
 ]
