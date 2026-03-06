@@ -15,12 +15,11 @@ async function comment() {
 
   if (type === "issue") {
     message = `
-👋 Thanks @${user} for opening this issue!
+      👋 Thanks @${user} for opening this issue!
+      Our maintainers will review it soon.
 
-Our maintainers will review it soon.
-
-If you'd like to contribute, feel free to check **good first issues**.
-`;
+      If you'd like to contribute, feel free to check **good first issues**.
+      `;
   }
 
   if (type === "pr") {
