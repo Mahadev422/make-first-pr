@@ -1,0 +1,39 @@
+name: Add Contributor
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  add-contributor:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run contributor script
+        run: node .github/scripts/addContributor.js
+        env:
+          GITHUB_USERNAME: ${{ github.event.pull_request.user.login }}
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add public/contributors.json
+          git commit -m "Added contributor"
+          git push

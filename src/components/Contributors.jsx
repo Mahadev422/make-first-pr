@@ -22,25 +22,12 @@ export default function Contributors() {
             className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition"
           >
             <img
-              src={"/make-first-pr"+user.avatar}
-              alt={user.name}
+              src={`https://github.com/${user.github}.png`}
+              alt={user.github}
               className="w-20 h-20 rounded-full mx-auto mb-4"
             />
 
-            <h2 className="text-xl font-semibold">{user.name}</h2>
-
-            <p className="text-gray-500 mb-3">{user.bio}</p>
-
-            <div className="flex flex-wrap justify-center gap-2 mb-4">
-              {user.skills.map((skill, i) => (
-                <span
-                  key={i}
-                  className="bg-blue-100 text-blue-600 px-2 py-1 text-sm rounded"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
+            <h2 className="text-xl font-semibold">{user.github}</h2>
 
             <a
               href={`https://github.com/${user.github}`}

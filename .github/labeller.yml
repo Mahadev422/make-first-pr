@@ -1,0 +1,13 @@
+frontend:
+  - "src/**"
+
+contributors:
+  - "public/contributors.json"
+
+docs:
+  - "*.md"
+  - "docs/**"
+
+config:
+  - ".github/**"
+  - "vite.config.js"

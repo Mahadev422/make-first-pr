@@ -1,9 +1,5 @@
 [
   {
-    "name": "Mahadev",
-    "github": "mahadev422",
-    "bio": "Engineering student",
-    "skills": ["React", "Node", "MongoDB"],
-    "avatar": "/images/mahadev.png"
+    "github": "mahadev422"
   }
 ]
