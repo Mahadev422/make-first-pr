@@ -1,4 +1,4 @@
-const fs = require("fs")
+import fs from "fs";
 
 const username = process.env.GITHUB_USERNAME
 const file = "../../public/contributors.json"

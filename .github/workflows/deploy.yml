@@ -3,7 +3,9 @@ name: Deploy React App
 on:
   push:
     branches: [main]
-
+    paths-ignore:
+      - ".github/**"
+      
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
