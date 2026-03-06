@@ -1,13 +1,19 @@
 frontend:
-  - "src/**"
+  - changed-files:
+      - any-glob-to-any-file:
+          - "src/**"
 
 contributors:
-  - "public/contributors.json"
+  - changed-files:
+      - any-glob-to-any-file:
+          - "public/contributors.json"
 
-docs:
-  - "*.md"
-  - "docs/**"
+assets:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "public/**"
 
-config:
-  - ".github/**"
-  - "vite.config.js"
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "*.md"
